@@ -6,10 +6,13 @@ on:
   push:
     branches: 
       [ main ]
+  pull_request:
+    branches:
+      - main  # 풀 리퀘스트가 main 브랜치에 생성될 때 트리거 설정
     paths:
     - '/app/**'
     - '.github/workflows/beseo-conapps01-AutoDeployTrigger-17653df9-859d-4698-87ee-149744c9de84.yml'
-
+  
   # Allow mannually trigger 
   workflow_dispatch:
       
